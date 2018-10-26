@@ -1,0 +1,22 @@
+{
+  "name": "use-react",
+  "author": "Jose M. Santos <josemsantos1994@gmail.com> (josemsantos.com)",
+  "version": "0.0.0",
+  "description": "Collection of react utilities based on React hooks",
+  "keywords": [
+    "react"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/jmsantos94/use-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jmsantos94/use-react/issues"
+  },
+  "homepage": "https://github.com/jmsantos94/use-react#readme"
+}
