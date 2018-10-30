@@ -4,6 +4,8 @@ import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 
+let a = 1;
+
 const config = {
     input: 'src/index.js',
     output: {

@@ -1,0 +1,127 @@
+{
+    "parser": "babel-eslint",
+    "settings": {
+        "react": {
+            "createClass": "createReactClass",
+            "pragma": "React",
+            "version": "16.4"
+        },
+        "propWrapperFunctions": ["forbidExtraProps"]
+    },
+    "extends": ["eslint:recommended", "prettier"],
+    "plugins": ["react"],
+    "settings": {
+        "react": {
+            "version": "16.5"
+        }
+    },
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "arrowFunctions": true,
+            "blockBindings": true,
+            "classes": true,
+            "defaultParams": true,
+            "destructuring": true,
+            "forOf": true,
+            "generators": true,
+            "modules": true,
+            "spread": true,
+            "templateStrings": true,
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "jest": true,
+        "node": true,
+        "worker": true,
+        "serviceworker": true
+    },
+    "globals": {
+        "__PROD_API__": false,
+        "__BASEPATH__": false,
+        "__DEV__": false,
+        "ga": false,
+        "trackJs": false
+    },
+    "rules": {
+        "dot-notation": 1,
+        "key-spacing": [1, { "afterColon": true }],
+        "no-console": 1,
+        "no-constant-condition": [1, { "checkLoops": false }],
+        "no-debugger": 1,
+        "no-global-assign": 1,
+        "no-redeclare": 1,
+        "no-dupe-args": 1,
+        "no-dupe-keys": 1,
+        "no-duplicate-case": 1,
+        "no-duplicate-imports": 1,
+        "no-empty": [1, { "allowEmptyCatch": true }],
+        "no-lone-blocks": 1,
+        "no-mixed-spaces-and-tabs": 1,
+        "no-multi-str": 1,
+        "no-multiple-empty-lines": 1,
+        "no-undef": 1,
+        "no-unreachable": 1,
+        "no-unused-vars": 1,
+        "no-useless-constructor": 1,
+        "no-useless-escape": 0,
+        "no-var": 1,
+        "no-with": 1,
+        "semi": [1, "always"],
+        "wrap-iife": 1,
+        "react/button-has-type": 1,
+        "react/display-name": [1, { "ignoreTranspilerName": false }],
+        "react/forbid-foreign-prop-types": 2,
+        "react/forbid-prop-types": [1, { "forbid": ["any"] }],
+        "react/jsx-boolean-value": 1,
+        "react/jsx-indent-props": [1, 4],
+        "react/jsx-key": 1,
+        "react/jsx-no-comment-textnodes": 1,
+        "react/jsx-no-duplicate-props": 1,
+        "react/jsx-no-target-blank": 1,
+        "react/jsx-no-undef": 1,
+        "react/jsx-pascal-case": 1,
+        "react/jsx-uses-react": 1,
+        "react/jsx-uses-vars": 1,
+        "react/jsx-wrap-multilines": 1,
+        "react/no-access-state-in-setstate": 1,
+        "react/no-danger": 1,
+        "react/no-danger-with-children": 1,
+        "react/no-deprecated": 1,
+        "react/no-did-mount-set-state": 1,
+        "react/no-did-update-set-state": 1,
+        "react/no-direct-mutation-state": 1,
+        "react/no-find-dom-node": 2,
+        "react/no-is-mounted": 2,
+        "react/no-multi-comp": 1,
+        "react/no-redundant-should-component-update": 1,
+        "react/no-render-return-value": 2,
+        "react/no-string-refs": 2,
+        "react/no-unescaped-entities": 1,
+        "react/no-unknown-property": 1,
+        "react/no-unused-prop-types": 1,
+        "react/no-unused-state": 1,
+        "react/no-will-update-set-state": 2,
+        "react/prefer-es6-class": 1,
+        "react/prefer-stateless-function": 1,
+        "react/prop-types": 1,
+        "react/react-in-jsx-scope": 1,
+        "react/require-render-return": 1,
+        "react/self-closing-comp": 1,
+        "react/sort-comp": 1,
+        "react/void-dom-elements-no-children": 2,
+        "react/jsx-tag-spacing": [
+            1,
+            {
+                "closingSlash": "never",
+                "beforeSelfClosing": "always",
+                "afterOpening": "never",
+                "beforeClosing": "never"
+            }
+        ]
+    }
+}
