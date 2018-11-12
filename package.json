@@ -6,7 +6,7 @@
     "keywords": [
         "react"
     ],
-    "main": "index.js",
+    "main": "dist/index.js",
     "scripts": {
         "clean": "rm -rf dist",
         "build": "yarn clean && NODE_ENV=production babel ./src --out-dir dist"
@@ -26,6 +26,7 @@
         "@babel/plugin-external-helpers": "^7.0.0",
         "@babel/plugin-proposal-class-properties": "^7.1.0",
         "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+        "@babel/plugin-syntax-export-default-from": "^7.0.0",
         "@babel/plugin-transform-react-constant-elements": "^7.0.0",
         "@babel/polyfill": "^7.0.0",
         "@babel/preset-env": "^7.1.0",

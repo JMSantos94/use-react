@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div align="center">
     <img
         src="https://github.com/jmsantos94/use-react/blob/master/misc/use-react.png"
         width="200px"
@@ -15,3 +15,4 @@ released.
 - [Installation](#installation)
 - [Demo](#demo)
 - [Documentation](#documentation)
+- [Roadmap](#roadmap)
