@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+typings/
+jsconfig.json
+**/.DS_Store
+coverage/
+reports/
+yarn-error.log
+.tern-port
+cypress/videos/
+cypress/screenshots/
