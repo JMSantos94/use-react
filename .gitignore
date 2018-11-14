@@ -8,5 +8,6 @@ coverage/
 reports/
 yarn-error.log
 .tern-port
+.docz/
 cypress/videos/
 cypress/screenshots/
