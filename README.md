@@ -6,6 +6,8 @@
     />
 </div>
 
+# WARNING: WORK IN PROGRES!
+
 # use-react
 This package is intended to be a collection of react utilities based on React
 Hooks. Everything here is currently experimental, until the hooks-api is
@@ -16,3 +18,7 @@ released.
 - [Demo](#demo)
 - [Documentation](#documentation)
 - [Roadmap](#roadmap)
+
+...
+
+Site: use-react.netlify.com

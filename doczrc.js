@@ -1,5 +1,4 @@
 import { css } from 'docz-plugin-css';
-import doczPluginNetlify from 'docz-plugin-netlify';
 
 const config = {
     plugins: [
@@ -9,7 +8,6 @@ const config = {
                 javascriptEnabled: true,
             },
         }),
-        doczPluginNetlify(),
     ],
     themeConfig: {
         showPlaygroundEditor: true,
