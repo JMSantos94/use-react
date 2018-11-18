@@ -1,0 +1,45 @@
+---
+name: useObject
+menu: Primitives
+route: /use-object
+---
+import { Playground } from 'docz';
+
+import Button from 'antd/lib/button';
+import List from 'antd/lib/list';
+
+import 'antd/lib/button/style';
+import 'antd/lib/list/style';
+
+import useObject from './useObject';
+
+# use-object
+
+This primitive intends to support all (eventually) native methods of the `Object` object, with a few helper methods.
+
+<Playground>
+{() => {
+  const obj = useObject({ firstName: 'John' });
+
+  const addLastName = () => obj.merge({ lastName: 'Doe' });
+
+  return (
+        <>
+            <Button
+                onClick={addLastName}
+                size="large"
+                type="primary"
+                style={{ marginRight: '.5em' }}
+            >
+                Add 'lastName'
+            </Button>
+            <List
+                style={{ marginTop: '.5em' }}
+                bordered
+                dataSource={obj.entries()}
+                renderItem={([key, val]) => <List.Item>{key}: {val}</List.Item>}
+            />
+        </>
+  )
+}}
+</Playground>
