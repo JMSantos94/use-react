@@ -1,7 +1,7 @@
 {
     "name": "use-react",
     "author": "Jose M. Santos <josemsantos1994@gmail.com> (josemsantos.com)",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Collection of react utilities based on React hooks",
     "keywords": [
         "react"
