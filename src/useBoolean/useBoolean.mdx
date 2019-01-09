@@ -1,0 +1,59 @@
+---
+name: useBoolean
+menu: Primitives
+route: /use-boolean
+---
+import { Playground } from 'docz';
+
+import Button from 'antd/lib/button';
+import Input from 'antd/lib/input';
+
+import 'antd/lib/button/style';
+import 'antd/lib/input/style';
+
+import useBoolean from './useBoolean.js';
+
+# use-boolean
+
+This primitive intends to support all (eventually) native methods of the `Boolean` object, with a few helper methods.
+
+<Playground>
+{() => {
+  const bool = useBoolean(false);
+
+  return (
+        <>
+            <Button
+                onClick={bool.toggle}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Toggle
+            </Button>
+            <Button
+                onClick={bool.setTrue}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Set to `true`
+            </Button>
+            <Button
+                onClick={bool.setFalse}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Set to `false`
+            </Button>
+            <Input
+                value={bool.toString()}
+                size="large"
+                disabled
+                style={{ margin: '.5em' }}
+            />
+        </>
+  )
+}}
+</Playground>

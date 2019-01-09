@@ -1,0 +1,90 @@
+---
+name: useNumber
+menu: Primitives
+route: /use-number
+---
+import { Playground } from 'docz';
+
+import Button from 'antd/lib/button';
+import Input from 'antd/lib/input';
+
+import 'antd/lib/button/style';
+import 'antd/lib/input/style';
+
+import useNumber from './useNumber.js';
+
+# use-number
+
+This primitive intends to support all (eventually) native methods of the `Number` object, with a few helper methods.
+
+<Playground>
+{() => {
+  const num = useNumber(10);
+
+  const add2 = () => num.add(2);
+  const subtract2 = () => num.subtract(2);
+  const multiply2 = () => num.multiply(2);
+  const divide2 = () => num.divide(2);
+  const pow3 = () => num.pow(3);
+  const sqrt = () => num.sqrt();
+
+  return (
+        <>
+            <Button
+                onClick={add2}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Add 2
+            </Button>
+            <Button
+                onClick={subtract2}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Subtract 2
+            </Button>
+            <Button
+                onClick={multiply2}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Multiply by 2
+            </Button>
+            <Button
+                onClick={divide2}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Divide by 2
+            </Button>
+            <Button
+                onClick={pow3}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Raise to the 3rd power
+            </Button>
+            <Button
+                onClick={sqrt}
+                size="large"
+                type="primary"
+                style={{ margin: '.5em' }}
+            >
+                Square Root
+            </Button>
+            <Input
+                value={num.value}
+                size="large"
+                disabled
+                style={{ margin: '.5em' }}
+            />
+        </>
+  )
+}}
+</Playground>

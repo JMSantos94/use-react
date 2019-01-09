@@ -49,6 +49,9 @@ function useArr(initialState = []) {
         reduce,
         shift,
         unshift,
+        get length() {
+            return arr.length;
+        },
     };
 }
 
