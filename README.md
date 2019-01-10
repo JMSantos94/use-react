@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" style="margi-bottom: 50px;">
     <img
         src="https://github.com/jmsantos94/use-react/blob/master/misc/use-react.png"
         width="200px"
@@ -6,9 +6,7 @@
     />
 </div>
 
-<p style="color: red; margin-top: 25px; font-size:
-1.25em;"><strong>NOTE:</strong> DO NOT USE THIS ON PRODUCTION. IT RELIES ON
-REACT'S HOOKS (A FEATURE CURRENTLY ON DEVELOPMENT).</p>
+**NOTE:** DO NOT USE THIS ON PRODUCTION. IT RELIES ON REACT'S HOOKS (A FEATURE CURRENTLY ON DEVELOPMENT).
 
 # use-react
 This package intends to provide a set of small
