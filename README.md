@@ -1,4 +1,4 @@
-<div align="center" style="margi-bottom: 50px;">
+<div align="center" style="margin-bottom: 50px;">
     <img
         src="https://github.com/jmsantos94/use-react/blob/master/misc/use-react.png"
         width="200px"
