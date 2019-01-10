@@ -64,7 +64,7 @@ const TodoApp = () => {
     };
 
     return (
-        <>
+        <div>
             <ul>
                 {todos.map(todo => (
                     <li>{ todo }</li>
@@ -74,7 +74,7 @@ const TodoApp = () => {
                 onKeyPress={handleSubmission}
                 type="text"
             />
-        </>
+        </div>
     );
 };
 
@@ -114,6 +114,8 @@ This custom hook returns an object with the following properties, and methods:
 | setTrue | Forces the value of our boolean to `true`|
 | setFalse | Forces the value of our boolean to `false`|
 | toString | Returns a string of our boolean: `true => 'true'` and `false => 'false'`|
+
+---
 
 ### useNumber
 
