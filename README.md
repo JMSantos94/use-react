@@ -6,8 +6,6 @@
     />
 </div>
 
-**NOTE:** DO NOT USE THIS ON PRODUCTION. IT RELIES ON REACT'S HOOKS (A FEATURE CURRENTLY ON DEVELOPMENT).
-
 # use-react
 This package intends to provide a set of small
 [hooks](https://reactjs.org/docs/hooks-intro.html). Intended to make working
@@ -15,7 +13,10 @@ with [primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 easier by providing a similar API to their native counterparts, as well as,
 expanding on those functionalities whenever possible.
 
-Feel free to submit your [suggestions](https://github.com/JMSantos94/use-react/issues/1)!
+Feel free to submit your
+[suggestions](https://github.com/JMSantos94/use-react/issues/1)!
+
+React hooks are still an experimental feature, do not use this on production.
 
 ## Table of Content
 - [Installation](#installation)
