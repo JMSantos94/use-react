@@ -11,8 +11,9 @@ function useArr(initialState = []) {
     };
 
     const pop = () => {
+        const value = arr[arr.length - 1];
         setArr(arr.slice(0, arr.length - 1));
-        return arr[arr.length - 1];
+        return value;
     };
 
     const shift = () => {

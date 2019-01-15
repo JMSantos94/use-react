@@ -11,7 +11,8 @@ This package intends to provide a set of small
 [hooks](https://reactjs.org/docs/hooks-intro.html). Intended to make working
 with [primitives](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 easier by providing a similar API to their native counterparts, as well as,
-expanding on those functionalities whenever possible.
+expanding on those functionalities whenever possible. As a plus, all methods
+exposed are immutable by default.
 
 Feel free to submit your
 [suggestions](https://github.com/JMSantos94/use-react/issues/1)!
@@ -95,7 +96,7 @@ Constructor:
 
 ```jsx
 import useBoolean from 'use-react/useBoolean';
-const bool = useBoolean(/* Parameters */);
+const bool = useBoolean(initialState);
 ```
 
 | Parameters | Description|
@@ -106,14 +107,14 @@ This custom hook returns an object with the following properties, and methods:
 
 | Properties | Description|
 | ------------- | ------------- |
-| value | The current value of our boolean.|
+| value | The current value of our `Boolean`.|
 
 | Methods | Description|
 | ------------- | ------------- |
-| toggle | Toggles the current value of our boolean.|
-| setTrue | Forces the value of our boolean to `true`|
-| setFalse | Forces the value of our boolean to `false`|
-| toString | Returns a string of our boolean: `true => 'true'` and `false => 'false'`|
+| toggle() | Toggles the current value of our boolean|
+| setTrue() | Forces the value of our boolean to `true`|
+| setFalse() | Forces the value of our boolean to `false`|
+| toString() | Returns a string of our boolean: `true => 'true'` and `false => 'false'`|
 
 ---
 
@@ -122,16 +123,106 @@ This custom hook returns an object with the following properties, and methods:
 Constructor:
 
 ```jsx
-import useNumber from 'use-react/useNumber;
-const bool = useNumber(/* Parameters */);
+import useNumber from 'use-react/useNumber';
+const num = useNumber(initialState);
 ```
 
 | Parameters | Description|
 | ------------- | ------------- |
-| initialState | Initial state of our `Number`. Defaults to `0`. |
+| initialState | Initial state of our `Number`. Defaults to `0` |
 
-[Work in progress]
+This custom hook returns an object with the following properties, and methods:
+
+| Properties | Description|
+| ------------- | ------------- |
+| value | The current value of our `Number`|
+
+| Methods | Description|
+| ------------- | ------------- |
+| set(`newValue`) | Sets our value to the passed `newValue`|
+| add(`addend`) | Takes a `addend` and adds it to our total value|
+| subtract(`subtrahend`) | Takes a `subtrahend` and subtracts it from our total value|
+| multiply(`multiplier`) | Multiplies our value by the given `mulitiplier`|
+| divide(`divisor`) | Divides our value by the given `divisor`|
+| pow(`exponent`) | Raises our value to the power of `exponent` |
+| sqrt() | Sets our value to its square root |
+| min([`num2`[, `num3`[, ...]]]) | Sets our value to lowest number passed as a parameter|
+| max([`num2`[, `num3`[, ...]]]) | Sets our value to highest number passed as a parameter|
+| isNaN() | Returns `true` if our value is `NaN`, otherwise `false`|
+| isFinite() | Returns `true` if our value is not `Inifity`, `NaN`, or `undefined`|
+| isSafeInteger() | Returns `true` if our integer is a "safe integer"|
+| toLocaleString(`...args`) | Same as the native `toLocaleString`, using our value|
+| toString(`...args`) | Returns our number as a `String`|
+
+---
+
+### useArray
+
+Constructor:
+
+```jsx
+import useArray from 'use-react/useArray';
+const arr = useArray(initialState);
+```
+
+| Parameters | Description|
+| ------------- | ------------- |
+| initialState | Initial state of our `Array`. Defaults to `[]` |
+
+This custom hook returns an object with the following properties, and methods:
+
+| Properties | Description|
+| ------------- | ------------- |
+| value | Returns a reference to our array|
+| length | Getter that returns the size of our array|
+
+| Methods | Description|
+| ------------- | ------------- |
+| set(`newArr`) | Sets our array to `newArr`|
+| push(`...args`) | Appends the passed arguments to our array|
+| pop() | Removes and returns the last value of our array |
+| unshift(`...args`) | Prepends the passed arguments to our array|
+| shift() | Removes and returns the first value of our array |
+| concat(`...args`) | Concatenates the passed arguments to our array |
+| map(`...args`) | Same as `Array.prototype.map` |
+| reduce(`...args`) | Same as the native `Array.prototype.reduce`|
+| filter(`...args`) | Same as the native `Array.prototype.filter`|
+| forEach(`...args`) | Same as the native `Array.prototype.forEach`|
+
+**Note**: all methods are mutations-free.
+
+---
+
+### useObject
+
+Constructor:
+
+```jsx
+import useObject from 'use-react/useObject;
+const obj = useObject(initialState);
+```
+
+| Parameters | Description|
+| ------------- | ------------- |
+| initialState | Initial state of our `Object`. Defaults to `{}` |
+
+This custom hook returns an object with the following properties, and methods:
+
+| Properties | Description|
+| ------------- | ------------- |
+| value | Returns a reference to our object|
+
+| Methods | Description|
+| ------------- | ------------- |
+| set(`newObj`) | Sets our array to `newObj`|
+| merge(`...args`) | Shallow merge of the passed arguments to our object|
+| entries(`...args`) | Same as the native `Array.prototype.entries`|
+| values(`...args`) | Same as the native `Array.prototype.values`|
+| keys(`...args`) | Same as the native `Array.prototype.keys`|
+
+**Note**: all methods are mutations-free.
 
 ## Roadmap
 
-[Work in progress]
+- [] Clean playground documentation (https://use-react.netlify.com/)
+- [] Explore other APIs worth adding to this library, or methods to existing ones
