@@ -116,6 +116,8 @@ This custom hook returns an object with the following properties, and methods:
 | setFalse() | Forces the value of our boolean to `false`|
 | toString() | Returns a string of our boolean: `true => 'true'` and `false => 'false'`|
 
+Playground: https://use-react.netlify.com/use-boolean
+
 ---
 
 ### useNumber
@@ -154,6 +156,8 @@ This custom hook returns an object with the following properties, and methods:
 | toLocaleString(`...args`) | Same as the native `toLocaleString`, using our value|
 | toString(`...args`) | Returns our number as a `String`|
 
+Playground: https://use-react.netlify.com/use-number
+
 ---
 
 ### useArray
@@ -191,6 +195,8 @@ This custom hook returns an object with the following properties, and methods:
 
 **Note**: all methods are mutations-free.
 
+Playground: https://use-react.netlify.com/use-array
+
 ---
 
 ### useObject
@@ -198,7 +204,7 @@ This custom hook returns an object with the following properties, and methods:
 Constructor:
 
 ```jsx
-import useObject from 'use-react/useObject;
+import useObject from 'use-react/useObject';
 const obj = useObject(initialState);
 ```
 
@@ -222,7 +228,11 @@ This custom hook returns an object with the following properties, and methods:
 
 **Note**: all methods are mutations-free.
 
+Playground: https://use-react.netlify.com/use-object
+
 ## Roadmap
 
-- [] Clean playground documentation (https://use-react.netlify.com/)
-- [] Explore other APIs worth adding to this library, or methods to existing ones
+- [ ] Clean playground documentation (https://use-react.netlify.com/)
+- [ ] Explore other APIs worth adding to this library, or methods to existing ones
+
+Get involved [here](https://github.com/JMSantos94/use-react/issues/1).
